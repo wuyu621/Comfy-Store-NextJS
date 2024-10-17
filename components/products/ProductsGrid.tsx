@@ -39,9 +39,7 @@ function ProductsGrid({ products }: { products: Product[] }) {
             </Link>
             {/* favorite button should been put outside the link component */}
             <div className="absolute top-7 right-7 z-5">
-              <FavoriteToggleButton
-                productId={productId}
-              ></FavoriteToggleButton>
+              <FavoriteToggleButton />
             </div>
           </article>
         );
