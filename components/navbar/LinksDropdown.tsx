@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { links } from "@/utils/links";
 import UserIcon from "./UserIcon";
-import { SignedOut, SignedIn, SignInButton } from "@clerk/nextjs";
+import { SignedOut, SignedIn, SignInButton, SignUpButton } from "@clerk/nextjs";
 import SignOutLink from "./SignOutLink";
 
 function LinksDropdown() {
@@ -31,9 +31,9 @@ function LinksDropdown() {
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <SignInButton mode="modal">
+            <SignUpButton mode="modal">
               <button className="w-full text-left">Register</button>
-            </SignInButton>
+            </SignUpButton>
           </DropdownMenuItem>
         </SignedOut>
         <SignedIn>
