@@ -1,4 +1,4 @@
-import { formatCurrency } from "@/utils/priceFormat";
+import { formatCurrency } from "@/utils/format";
 import { Product } from "@prisma/client";
 import Link from "next/link";
 import { Card, CardContent } from "../ui/card";
@@ -39,7 +39,7 @@ function ProductsList({ products }: { products: Product[] }) {
               </Card>
             </Link>
             <div className="absolute right-8 bottom-8 z-5">
-              <FavoriteToggleButton />
+              <FavoriteToggleButton productId={productId} />
             </div>
           </article>
         );

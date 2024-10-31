@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import LoadingContainer from "@/components/global/LoadingContainer";
 
 function loading() {

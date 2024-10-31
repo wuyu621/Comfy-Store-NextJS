@@ -14,7 +14,7 @@ function BreadCrumbs({ name }: { name: string }) {
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink>
+          <BreadcrumbLink asChild>
             <Link href="/" className="capitalize text-lg">
               home
             </Link>
@@ -22,7 +22,7 @@ function BreadCrumbs({ name }: { name: string }) {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbLink>
+          <BreadcrumbLink asChild>
             <Link href="/products" className="capitalize text-lg">
               products
             </Link>

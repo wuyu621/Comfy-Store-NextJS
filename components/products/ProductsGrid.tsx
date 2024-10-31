@@ -1,5 +1,5 @@
 import { Card, CardContent } from "../ui/card";
-import { formatCurrency } from "@/utils/priceFormat";
+import { formatCurrency } from "@/utils/format";
 import { Product } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,7 +39,7 @@ function ProductsGrid({ products }: { products: Product[] }) {
             </Link>
             {/* favorite button should been put outside the link component */}
             <div className="absolute top-7 right-7 z-5">
-              <FavoriteToggleButton />
+              <FavoriteToggleButton productId={productId} />
             </div>
           </article>
         );
