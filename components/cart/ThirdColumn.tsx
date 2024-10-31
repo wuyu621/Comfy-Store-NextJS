@@ -29,7 +29,7 @@ function ThirdColumn({ id, quantity }: { id: string; quantity: number }) {
     <div className="md:ml-8 ">
       <SelectProductAmount
         mode={Mode.cartItem}
-        amount={quantity}
+        amount={amount}
         setAmount={handelAmountChange}
         isLoading={isLoading}
       />

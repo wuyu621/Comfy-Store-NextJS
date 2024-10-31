@@ -9,7 +9,6 @@ import RatingInput from "./RatingInput";
 import TextAreaInput from "../form/TextAreaInput";
 import { SubmitButton } from "../form/Buttons";
 import { useUser } from "@clerk/nextjs";
-import { findExistingReview } from "@/utils/actions";
 
 async function SubmitReview({ productId }: { productId: string }) {
   const { user } = useUser();

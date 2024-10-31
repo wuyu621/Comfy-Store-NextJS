@@ -1,8 +1,8 @@
 import { NextRequest } from "next/server";
 import db from "@/utils/db";
 import { redirect } from "next/navigation";
-
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+import Stripe from "stripe";
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
 
 export const GET = async (req: NextRequest) => {
   const { searchParams } = new URL(req.url);

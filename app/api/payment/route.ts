@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
 import db from "@/utils/db";
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+import Stripe from "stripe";
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
 
 export const POST = async (req: NextRequest) => {
   //   const origin = req.headers.get("origin");
