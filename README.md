@@ -36,7 +36,7 @@ You can view a live demo of the project on Vercel:
 To run the project locally, you'll need to clone the repository and install the dependencies using `npm` or `yarn`.
 
 ```
-git clone [https://github.com/wuyu621/Comfy-Store-ReactJS](https://github.com/wuyu621/Comfy-Store-NextJS)
+git clone https://github.com/wuyu621/Comfy-Store-NextJS
 cd my-project
 npm install
 ```
