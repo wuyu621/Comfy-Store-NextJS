@@ -27,7 +27,7 @@ Check out the live version of the app: [Comfy Store](https://nextjs-comfystore.v
 
 ## Demo
 
-You can view a live demo of the project on Netlify:
+You can view a live demo of the project on Vercel:
 [Comfy Store Live Demo](https://nextjs-comfystore.vercel.app/)
 
 
