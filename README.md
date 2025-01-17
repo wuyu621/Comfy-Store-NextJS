@@ -2,7 +2,9 @@
 
 Welcome to **Comfy Store-NextJS**, a full-stack e-commerce web application where users can browse search and purchase products with ease using NextJS.
 
-Check out the live version of the app: [Comfy Store](https://nextjs-comfystore.vercel.app/)
+Check out the live version of the app using demo user test@test.com and password:test1234 :
+
+[Comfy Store](https://nextjs-comfystore.vercel.app/)
 
 ---
 
