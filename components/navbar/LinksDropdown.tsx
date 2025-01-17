@@ -20,9 +20,13 @@ function LinksDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="flex gap-4 max-w-[100px]">
+        <Button variant="outline" className="flex gap-4 max-w-[300px]">
           <LuAlignLeft className="w-6 h-6" />
-          <UserIcon />
+          <UserIcon />{" "}
+          <div className="flex flex-col items-start">
+            <p className="text-xs">Demo User: test@test.com</p>
+            <p className="text-xs">Password: test1234</p>
+          </div>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-36" align="start" sideOffset={10}>
